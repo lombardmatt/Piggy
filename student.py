@@ -66,8 +66,8 @@ class Piggy(PiggyParent):
         self.stop
 
 
-        for x in range(3):
-            self.shake()
+        #for x in range(3):
+            #self.shake()
             # call other dance moves
 
     def safe_to_dance(self):
