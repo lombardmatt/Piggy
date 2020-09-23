@@ -63,7 +63,7 @@ class Piggy(PiggyParent):
         # lower-order example
         self.fwd()
         time.sleep(2)
-        self.stop
+        self.stop()
 
 
         #for x in range(3):
