@@ -60,15 +60,18 @@ class Piggy(PiggyParent):
         """A higher-ordered algorithm to make your robot dance"""
         # TODO: check to see if it's safe before dancing
         
-        self.cha-cha(
+        self.cha_cha(
         #self.sprinkler()
         #self.dance(1)
         #self.dance(2)
         #self.right(primary=50, counter=-50)
         #ime.sleep(2)
         #elf.stop()
-
-def cha-cha(self):
+ 
+ 
+ 
+    def cha_cha(self):
+    pass
     for x in range(5):
         self.fwd(2)
         self.sleep(1)
