@@ -64,13 +64,14 @@ class Piggy(PiggyParent):
         #self.sprinkler()
         #self.dance(1)
         #self.dance(2)
-        self.right(primary=50, counter=-50)
-        time.sleep(2)
-        self.stop()
+        #self.right(primary=50, counter=-50)
+        #ime.sleep(2)
+        #elf.stop()
 
 def cha-cha(self):
     for x in range(5):
         self.fwd(2)
+        self.sleep(1)
         self.back(2)
         #for x in range(3):
             #self.shake()
