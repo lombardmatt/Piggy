@@ -71,11 +71,11 @@ class Piggy(PiggyParent):
  
  
     def cha_cha(self):
-    pass
-    for x in range(5):
-        self.fwd(2)
-        self.sleep(1)
-        self.back(2)
+        for x in range(5):
+            self.fwd(2)
+            self.sleep(1)
+            self.back(2)
+
         #for x in range(3):
             #self.shake()
             # call other dance moves
