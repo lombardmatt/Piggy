@@ -72,9 +72,10 @@ class Piggy(PiggyParent):
  
     def cha_cha(self):
         for x in range(5):
-            self.fwd(2)
+            self.fwd()
             self.sleep(1)
-            self.back(2)
+            self.back()
+        self.stop()
 
         #for x in range(3):
             #self.shake()
