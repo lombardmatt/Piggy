@@ -61,7 +61,7 @@ class Piggy(PiggyParent):
         # TODO: check to see if it's safe before dancing
         if not self.safe_to_dance():
             return False # SHUT IT DOWN
-        self.cha_cha()
+        self.example_move()
         #self.sprinkler()
         #self.dance(1)
         #self.dance(2)
