@@ -96,6 +96,7 @@ class Piggy(PiggyParent):
         for r in range(3):
             self.right()
             time.sleep(1)
+            print("stop")
             self.stop()
 
         self.stop()
