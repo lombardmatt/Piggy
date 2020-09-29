@@ -95,13 +95,14 @@ class Piggy(PiggyParent):
     def move2(self):
         for r in range(3):
             self.fwd()
-            print("right")
             time.sleep(1)
-            print("stop")
             self.stop()
             time.sleep(.5)
             self.back()
             time.sleep(1)
+            self.stop()
+            time.sleep(.5)
+            
 
         self.stop()
 
