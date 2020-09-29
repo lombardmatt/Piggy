@@ -72,13 +72,14 @@ class Piggy(PiggyParent):
  
  
     def cha_cha(self):
+
         for x in range(2):
             self.fwd()
-            time.sleep(0.01)
             self.back()
         self.stop()
 
-        #for x in range(3):
+    
+   #for x in range(3):
             #self.shake()
             # call other dance moves
 
