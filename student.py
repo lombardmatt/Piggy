@@ -74,8 +74,8 @@ class Piggy(PiggyParent):
     def cha_cha(self):
 
         for x in range(2):
-            self.fwd()
             self.back()
+            time.sleep(.5)
         self.stop()
 
     
