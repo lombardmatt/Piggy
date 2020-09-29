@@ -71,12 +71,7 @@ class Piggy(PiggyParent):
  
  
  
-    def cha_cha(self):
 
-        for x in range(2):
-            self.back()
-            time.sleep(.5)
-        self.stop()
 
     
    #for x in range(3):
@@ -97,10 +92,12 @@ class Piggy(PiggyParent):
         return True
 
 
-    def shake(self):
-        self.deg_fwd(720)
+    def cha_cha(self):
+        for x in range(3):
+            self.forward()
+            time.sleep(.5)
+            self.stop()
         self.stop()
-
 
     def example_move(self):
         """this is an example dance move that should be replaced by student-created content"""
