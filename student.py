@@ -94,11 +94,9 @@ class Piggy(PiggyParent):
 
     def move2(self):
         for x in range(3):
-            self.fwd()
+            self.right()
             time.sleep(1)
-            self.stop()
-            time.sleep(.01)
-        self.stop()
+       self.stop()
 
     def example_move(self):
         """this is an example dance move that should be replaced by student-created content"""
