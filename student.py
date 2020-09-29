@@ -96,6 +96,7 @@ class Piggy(PiggyParent):
         for x in range(3):
             self.right()
             time.sleep(1)
+            self.stop()
         self.stop()
 
     def example_move(self):
