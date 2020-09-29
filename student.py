@@ -76,6 +76,7 @@ class Piggy(PiggyParent):
             self.fwd()
             time.sleep(.5)
             self.stop()
+            time.sleep(.01)
         self.stop()
 
         #for x in range(3):
