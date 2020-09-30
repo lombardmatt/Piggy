@@ -61,9 +61,9 @@ class Piggy(PiggyParent):
         # TODO: check to see if it's safe before dancing
         if not self.safe_to_dance():
             return False # SHUT IT DOWN
-        self.move2()
+        #self.move2()
         #self.sprinkler()
-        #self.dance(1)
+        self.dance1
         #self.dance(2)
         #self.right(primary=50, counter=-50)
         #ime.sleep(2)
@@ -105,6 +105,32 @@ class Piggy(PiggyParent):
             
 
         self.stop()
+
+
+    def dance1(self):
+        self.fwd()
+        time.sleep(1)
+        self.right()
+        time.sleep(.5)
+        self.stop()
+        time.sleep(.5)
+        self.back()
+        time.sleep(1)
+    self.stop()
+
+
+    def dance2(self):
+        self.right()
+        time.sleep(3)
+    self.stop()
+
+    def shake(self):
+        self.
+        # neewd to figure out shake
+
+    def.sprinkler(self):
+        #need to figure out how to do
+        
 
     def example_move(self):
         """this is an example dance move that should be replaced by student-created content"""
