@@ -128,7 +128,7 @@ class Piggy(PiggyParent):
         #self.
         # neewd to figure out shake
 
-    def.sprinkler(self):
+    #def.sprinkler(self):
         #need to figure out how to do
 
 
