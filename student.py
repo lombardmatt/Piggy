@@ -121,7 +121,7 @@ class Piggy(PiggyParent):
         time.sleep(1)
         self.back()
         time.sleep(1)
-        self.left()
+        self.right()
         time.sleep(1)
         self.back()
         time.sleep(1)
