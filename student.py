@@ -63,9 +63,10 @@ class Piggy(PiggyParent):
             return False # SHUT IT DOWN
         self.dance1()
         self.dance3()
-        #self.move2()
-        #self.quinn_shuffle()
-        #self.sprinkler()
+        self.move2()
+        self.quinn_shuffle()
+        self.sprinkler()
+        self.wheelie()
         #self.right(primary=50, counter=-50)
         #ime.sleep(2)
         #elf.stop()
@@ -93,29 +94,7 @@ class Piggy(PiggyParent):
         return True
 
 
-    def move2(self):
-        for r in range(3):
-            time.sleep(.1)
-            self.fwd()
-            time.sleep(.5)
-            self.stop()
-            time.sleep(.3)
-            self.back()
-            time.sleep(.5)
-            self.stop()
-            time.sleep(.3)
-            
 
-        self.stop()
-
-    def quinn_shuffle(self):
-    # Code taken from Quinn via discord, thanks Quinn.
-        for x in range(5):
-            self.right(primary=-60, counter=0)
-            time.sleep(.1)
-            self.left(primary=-60, counter=0)
-            time.sleep(.1)
-     
 
     def dance1(self):
         time.sleep(.2)
@@ -158,6 +137,33 @@ class Piggy(PiggyParent):
         time.sleep(1)
         self.stop()
 
+
+
+   def move2(self):
+        for r in range(3):
+            time.sleep(.1)
+            self.fwd()
+            time.sleep(.5)
+            self.stop()
+            time.sleep(.3)
+            self.back()
+            time.sleep(.5)
+            self.stop()
+            time.sleep(.3)
+        
+        self.stop()
+
+
+    def quinn_shuffle(self):
+    # Code taken from Quinn via discord, thanks Quinn.
+        for x in range(5):
+            self.right(primary=-60, counter=0)
+            time.sleep(.1)
+            self.left(primary=-60, counter=0)
+            time.sleep(.1)
+        self.stop()
+
+
     #def shake(self):
         #self.
         # neewd to figure out shake
@@ -178,6 +184,21 @@ class Piggy(PiggyParent):
         self.servo(0)
         self.stop()
 
+
+    def wheelie(self):
+        """this is a wheelie move"""
+        #taken from Friedman, thanks mate.
+        for x in range(4):
+            self.fwd(right=100, left=100)
+            time.sleep(.5)
+            self.servo(1000)
+            time.sleep(.1)
+            self.servo(2000)
+            time.sleep(.1)
+            self.fwd(right=-100, left=-100)
+            time.sleep(.1)
+            self.servo(-1000)
+            self.stop()
 
     def example_move(self):
         """this is an example dance move that should be replaced by student-created content"""
