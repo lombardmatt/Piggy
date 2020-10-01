@@ -154,16 +154,16 @@ class Piggy(PiggyParent):
 
     def sprinkler(self):
     # Code taken from Mr.A on the Gilmour Discord
-        for angle in range(1100, 2000, 25):
+        for angle in range(1100, 2000, 50):
             self.servo(angle)
             time.sleep(.1)
-            self.servo(angle-50)
+            self.servo(angle-100)
             time.sleep(.1)
         self.servo(1100)
-        for angles in range(1100, 2000, 25):
+        for angles in range(1100, 2000, 50):
             self.servo(angles)
             time.sleep(.1)
-            self.servo(angles-50)
+            self.servo(angles-100)
             time.sleep(.1)
         self.stop()
 
