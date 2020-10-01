@@ -63,9 +63,9 @@ class Piggy(PiggyParent):
             return False # SHUT IT DOWN
         self.dance1()
         self.dance3()
-        self.move2()
-        self.quinn_shuffle()
-        self.sprinkler()
+        #self.move2()
+        #self.quinn_shuffle()
+        #self.sprinkler()
         #self.right(primary=50, counter=-50)
         #ime.sleep(2)
         #elf.stop()
