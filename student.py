@@ -61,10 +61,11 @@ class Piggy(PiggyParent):
         # TODO: check to see if it's safe before dancing
         if not self.safe_to_dance():
             return False # SHUT IT DOWN
-        #self.dance1()
+        self.dance1()
         self.dance3()
-        #self.move2()
-        #self.sprinkler()
+        self.move2()
+        self.quinn_shuffle()
+        self.sprinkler()
         #self.right(primary=50, counter=-50)
         #ime.sleep(2)
         #elf.stop()
@@ -107,6 +108,14 @@ class Piggy(PiggyParent):
 
         self.stop()
 
+    def quinn_shuffle(self):
+    # Code taken from Quinn via discord, thanks Quinn.
+        for x in range(5):
+            self.right(primary=-60, counter=0)
+            time.sleep(.1)
+            self.left(primary=-60, counter=0)
+            time.sleep(.1)
+     
 
     def dance1(self):
         time.sleep(.1)
