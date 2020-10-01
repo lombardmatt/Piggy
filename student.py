@@ -180,7 +180,7 @@ class Piggy(PiggyParent):
             time.sleep(.1)
             self.servo(angles-100)
             time.sleep(.1)
-        self.servo(0)
+        self.servo(1500)
         self.stop()
 
 
@@ -191,7 +191,7 @@ class Piggy(PiggyParent):
             self.fwd(right=100, left=100)
             time.sleep(1)
         self.stop()
-        
+
     def example_move(self):
         """this is an example dance move that should be replaced by student-created content"""
         self.right() # start rotating right
