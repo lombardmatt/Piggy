@@ -159,6 +159,7 @@ class Piggy(PiggyParent):
             time.sleep(.1)
             self.servo(angle-50)
             time.sleep(.1)
+            self.servo(1100)
         self.stop()
 
 
