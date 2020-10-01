@@ -189,16 +189,9 @@ class Piggy(PiggyParent):
         #taken from Friedman, thanks mate.
         for x in range(4):
             self.fwd(right=100, left=100)
-            time.sleep(.5)
-            self.servo(1000)
-            time.sleep(.1)
-            self.servo(2000)
-            time.sleep(.1)
-            self.fwd(right=-100, left=-100)
-            time.sleep(.1)
-            self.servo(-1000)
-            self.stop()
-
+            time.sleep(1)
+        self.stop()
+        
     def example_move(self):
         """this is an example dance move that should be replaced by student-created content"""
         self.right() # start rotating right
