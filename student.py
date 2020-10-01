@@ -123,7 +123,7 @@ class Piggy(PiggyParent):
     def dance2(self):
         self.right()
         time.sleep(3)
-    self.stop()
+        self.stop()
 
     #def shake(self):
         #self.
