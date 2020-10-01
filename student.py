@@ -189,7 +189,15 @@ class Piggy(PiggyParent):
         #taken from Friedman, thanks mate.
         for x in range(4):
             self.fwd(right=100, left=100)
-            time.sleep(1)
+            time.sleep(.5)
+            self.servo(1000)
+            time.sleep(.1)
+            self.servo(2000)
+            time.sleep(.1)
+            self.fwd(right=-100, left=-100)
+            time.sleep(.1)
+            self.servo(-1000)
+            self.stop()
         self.stop()
 
     def example_move(self):
