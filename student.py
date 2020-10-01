@@ -95,13 +95,13 @@ class Piggy(PiggyParent):
     def move2(self):
         for r in range(3):
             self.fwd()
-            time.sleep(1)
-            self.stop()
             time.sleep(.5)
+            self.stop()
+            time.sleep(.3)
             self.back()
-            time.sleep(1)
-            self.stop()
             time.sleep(.5)
+            self.stop()
+            time.sleep(.3)
             
 
         self.stop()
@@ -118,7 +118,7 @@ class Piggy(PiggyParent):
         self.fwd()
         time.sleep(1)
         self.stop()
-        time.sleep(1)
+        time.sleep(.1)
         self.back()
         time.sleep(1)
         self.turn_by_deg(-90)
@@ -129,7 +129,7 @@ class Piggy(PiggyParent):
     
 
     def dance3(self):
-        time.sleep(1)
+        time.sleep(.1)
         self.fwd()
         time.sleep(1)
         self.stop()
@@ -139,7 +139,7 @@ class Piggy(PiggyParent):
         self.fwd()
         time.sleep(1)
         self.stop()
-        time.sleep(1)
+        time.sleep(.1)
         self.back()
         time.sleep(1)
         self.turn_by_deg(90)
