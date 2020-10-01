@@ -63,7 +63,7 @@ class Piggy(PiggyParent):
             return False # SHUT IT DOWN
         #self.move2()
         #self.sprinkler()
-        self.dance1
+        self.dance1()
         #self.dance(2)
         #self.right(primary=50, counter=-50)
         #ime.sleep(2)
@@ -124,13 +124,13 @@ class Piggy(PiggyParent):
         time.sleep(3)
     self.stop()
 
-    def shake(self):
-        self.
+    #def shake(self):
+        #self.
         # neewd to figure out shake
 
     def.sprinkler(self):
         #need to figure out how to do
-        
+
 
     def example_move(self):
         """this is an example dance move that should be replaced by student-created content"""
