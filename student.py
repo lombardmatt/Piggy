@@ -155,7 +155,7 @@ class Piggy(PiggyParent):
 
     def quinn_shuffle(self):
     # Code taken from Quinn via discord, thanks Quinn.
-        for x in range(5):
+        for x in range(12):
             self.right(primary=-60, counter=0)
             time.sleep(.1)
             self.left(primary=-60, counter=0)
@@ -163,8 +163,13 @@ class Piggy(PiggyParent):
         self.stop()
 
 
-    #def shake(self):
-        #self.
+    def roundround(self):
+        for angle in range(4):
+            self.turn_by_deg(90)
+            self.servo(1000)
+            self.servo(2000)
+        self.servo(1500)
+        self.stop()
         # neewd to figure out shake
 
     def sprinkler(self):
