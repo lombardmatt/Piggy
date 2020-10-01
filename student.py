@@ -64,7 +64,7 @@ class Piggy(PiggyParent):
         #self.move2()
         #self.sprinkler()
         self.dance1()
-        self.dance3
+        self.dance3()
         #self.right(primary=50, counter=-50)
         #ime.sleep(2)
         #elf.stop()
@@ -108,7 +108,7 @@ class Piggy(PiggyParent):
 
 
     def dance1(self):
-        time.sleep(1)
+        time.sleep(.1)
         self.fwd()
         time.sleep(1)
         self.stop()
