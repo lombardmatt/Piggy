@@ -159,7 +159,12 @@ class Piggy(PiggyParent):
             time.sleep(.1)
             self.servo(angle-50)
             time.sleep(.1)
-            self.servo(1100)
+        self.servo(1100)
+        for angles in range(1100, 2000, 25):
+            self.servo(angles)
+            time.sleep(.1)
+            self.servo(angles-50)
+            time.sleep(.1)
         self.stop()
 
 
