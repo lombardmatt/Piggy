@@ -61,15 +61,16 @@ class Piggy(PiggyParent):
         # TODO: check to see if it's safe before dancing
         if not self.safe_to_dance():
             return False # SHUT IT DOWN
-        self.dance1()
-        self.dance2()
-        self.dance3()
-        self.dance4()
-        self.move2()
-        self.quinn_shuffle()
-        self.roundround()
-        self.sprinkler()
-        self.wheelie()
+        for d in range(2):
+            self.dance1()
+            self.dance2()
+            self.dance3()
+            self.dance4()
+            self.move2()
+            self.quinn_shuffle()
+            self.roundround()
+            self.sprinkler()
+            self.wheelie()
         #self.right(primary=50, counter=-50)
         #ime.sleep(2)
         #elf.stop()
