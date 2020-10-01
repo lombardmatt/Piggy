@@ -62,7 +62,7 @@ class Piggy(PiggyParent):
         if not self.safe_to_dance():
             return False # SHUT IT DOWN
         self.dance1()
-        #self.dance3()
+        self.dance3()
         #self.move2()
         #self.quinn_shuffle()
         #self.sprinkler()
@@ -148,7 +148,7 @@ class Piggy(PiggyParent):
         self.fwd()
         time.sleep(1)
         self.stop()
-        time.sleep(1)
+        time.sleep(.3)
         self.back()
         time.sleep(1)
         self.turn_by_deg(90)
