@@ -63,6 +63,7 @@ class Piggy(PiggyParent):
             return False # SHUT IT DOWN
             # THIS IS ThE GROVE 
         for d in range(2):
+        # LOOPED IT SO MY DANCE CAN REACH THE REQUIRED TIME LIMIT
             self.dance1()
             self.dance2()
             self.dance3()
@@ -71,7 +72,8 @@ class Piggy(PiggyParent):
             self.quinn_shuffle()
             self.roundround()
             self.sprinkler()
-            self.wheelie()
+        self.wheelie()
+        
        
  
  
