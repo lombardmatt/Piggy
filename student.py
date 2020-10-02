@@ -248,8 +248,8 @@ class Piggy(PiggyParent):
 # SEVENTH DANCE
 
     def roundround(self):
-        """ This dance is odd. The robots looks at all four candinal directions then does a head sway"""
-        # A last minue add in, but I think it will be cool
+        """ This dance is odd, just a spin with some head movements. He is trying his hardest ok"""
+        # A last minute add in, but I think it will be cool
         for angle in range(4):
             self.turn_by_deg(90)
             self.servo(1000)
