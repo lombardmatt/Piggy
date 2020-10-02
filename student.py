@@ -102,7 +102,7 @@ class Piggy(PiggyParent):
 # FIRST DANCE (1/4)
 
     def dance1(self):
-    """ This is the 1st part to a 4 move combo.  This dance makes the robot drive in an L-shape to mock a slide"""
+    """ This is the 1st part to a 4 move combo. This dance makes the robot drive in an L-shape to mock a slide"""
     # Very complex, but this is how I go the L to work.
         time.sleep(.2)
         self.fwd()
@@ -126,7 +126,7 @@ class Piggy(PiggyParent):
 # SECOND DANCE (2/4)
 
     def dance2(self):
-    """ Second dance, Same move as dance1, just the other way"""
+        """ Second dance, Same move as dance1, just the other way"""
     # In order to make it go the other way I change its turning direction
         time.sleep(.2)
         self.fwd()
@@ -150,7 +150,7 @@ class Piggy(PiggyParent):
 # THRID DANCE (3/4)
 
     def dance3(self):
-    """ Thrid dance, Combo 3 of 4, same move as dance1, just backwords"""
+    """ Thrid dance Combo 3 of 4 same move as dance1, just backwords"""
     # This move is untested and I pray it works, created by changing the directions the robot heads in. Oppisite to dance1
         time.sleep(.2)
         self.back()
@@ -200,7 +200,7 @@ class Piggy(PiggyParent):
 #FIFTH DANCE
 
     def move2(self):
-    "Fitfh dance, it is a simple cha-cha slide, so fwds and back"
+    """Fitfh dance, it is a simple cha-cha slide, so fwds and back"""
     # May pop a wheelie
 
         for r in range(3):
