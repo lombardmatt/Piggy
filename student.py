@@ -226,7 +226,7 @@ class Piggy(PiggyParent):
             time.sleep(.1)
             self.left(primary=-60, counter=0)
             time.sleep(.1)
-        self.stop()
+        self.stop() 
 
 # SEVENTH DANCE
 
