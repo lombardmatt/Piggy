@@ -231,8 +231,8 @@ class Piggy(PiggyParent):
 # SEVENTH DANCE
 
     def roundround(self):
-    """ This dance is odd. The robots looks at all four candinal directions then does a head sway"""
-    # A last minue add in, but I think it will be cool
+        """ This dance is odd. The robots looks at all four candinal directions then does a head sway"""
+        # A last minue add in, but I think it will be cool
         for angle in range(4):
             self.turn_by_deg(90)
             self.servo(1000)
@@ -244,8 +244,8 @@ class Piggy(PiggyParent):
 # EIGHT DANCE
 
     def sprinkler(self):
-    """ As classic and simple as it gets. Make the head/neck of the robot move so it mocks the famous sprinkler move"""
-    # Code taken from Mr.A on the Gilmour Discord
+        """ As classic and simple as it gets. Make the head/neck of the robot move so it mocks the famous sprinkler move"""
+        # Code taken from Mr.A on the Gilmour Discord
         for angle in range(1100, 2000, 50):
             self.servo(angle)
             time.sleep(.1)
