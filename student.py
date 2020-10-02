@@ -106,10 +106,12 @@ class Piggy(PiggyParent):
         # Very complex, but this is how I go the L to work.
         time.sleep(.2)
         self.fwd()
+        # Going forward for a second
         time.sleep(1)
         self.stop()
         time.sleep(.1)
         self.right()
+        # Turning right for a second
         time.sleep(1)
         self.fwd()
         time.sleep(1)
@@ -118,8 +120,10 @@ class Piggy(PiggyParent):
         self.back()
         time.sleep(1)
         self.turn_by_deg(-90)
+        # turning left for a second
         time.sleep(.1)
         self.back()
+        # returning to start
         time.sleep(1)
         self.stop()
     
@@ -130,10 +134,12 @@ class Piggy(PiggyParent):
         # In order to make it go the other way I change its turning direction
         time.sleep(.2)
         self.fwd()
+        # going forward for a second
         time.sleep(1)
         self.stop()
         time.sleep(.1)
         self.left()
+        # turning left for a second
         time.sleep(1)
         self.fwd()
         time.sleep(1)
@@ -142,8 +148,10 @@ class Piggy(PiggyParent):
         self.back()
         time.sleep(1)
         self.turn_by_deg(90)
+        # turning right for a second
         time.sleep(.1)
         self.back()
+        # returning to start position
         time.sleep(1)
         self.stop()
 
@@ -153,11 +161,14 @@ class Piggy(PiggyParent):
         """ Thrid dance Combo 3 of 4 same move as dance1, just backwords"""
         # This move is untested and I pray it works, created by changing the directions the robot heads in. Oppisite to dance1
         time.sleep(.2)
+        # ^ Is here since the code wouldn't run without it
         self.back()
+        # going backwards for a second
         time.sleep(1)
         self.stop()
         time.sleep(.1)
         self.turn_by_deg(90)
+        # turning right for a second
         time.sleep(1)
         self.fwd()
         time.sleep(1)
@@ -166,7 +177,9 @@ class Piggy(PiggyParent):
         self.back()
         time.sleep(1)
         self.turn_by_deg(-90)
+        # turning left for a second
         time.sleep(.1)
+        # returning to starting position
         self.back()
         time.sleep(1)
         self.stop()
@@ -179,10 +192,12 @@ class Piggy(PiggyParent):
         # This is the last move of the four step-slide combo
         time.sleep(.2)
         self.back()
+        # going backwards for a second
         time.sleep(1)
         self.stop()
         time.sleep(.1)
         self.turn_by_deg(-90)
+        # turning left for a second
         time.sleep(1)
         self.fwd()
         time.sleep(1)
@@ -191,8 +206,10 @@ class Piggy(PiggyParent):
         self.back()
         time.sleep(1)
         self.turn_by_deg(90)
+        # turning to go back to start for a second
         time.sleep(.1)
         self.back()
+        # returning to starting position
         time.sleep(1)
         self.stop()
 
@@ -201,7 +218,7 @@ class Piggy(PiggyParent):
 
     def move2(self):
         """Fitfh dance, it is a simple cha-cha slide, so fwds and back"""
-        # May pop a wheelie
+        # May pop a wheelie due to change of battery placement
 
         for r in range(3):
             time.sleep(.1)
@@ -267,6 +284,7 @@ class Piggy(PiggyParent):
         #taken from Friedman, thanks mate.
         for x in range(4):
             self.fwd(right=100, left=100)
+            # causes the robot to tip making a wheelie
             time.sleep(.5)
             self.servo(1000)
             time.sleep(.1)
