@@ -58,9 +58,10 @@ class Piggy(PiggyParent):
 
     def dance(self):
         """A higher-ordered algorithm to make your robot dance"""
-        # TODO: check to see if it's safe before dancing
+        # check to see if it's safe before dancing
         if not self.safe_to_dance():
             return False # SHUT IT DOWN
+            # THIS IS ThE GROVE 
         for d in range(2):
             self.dance1()
             self.dance2()
@@ -71,10 +72,7 @@ class Piggy(PiggyParent):
             self.roundround()
             self.sprinkler()
             self.wheelie()
-        #self.right(primary=50, counter=-50)
-        #ime.sleep(2)
-        #elf.stop()
- 
+       
  
  
 
@@ -99,8 +97,11 @@ class Piggy(PiggyParent):
 
 
 
+# FIRST DANCE (1/4)
 
     def dance1(self):
+    """ This is the 1st part to a 4 move combo.  This dance makes the robot drive in an L-shape to mock a slide"""
+    # Very complex, but this is how I go the L to work.
         time.sleep(.2)
         self.fwd()
         time.sleep(1)
@@ -120,8 +121,11 @@ class Piggy(PiggyParent):
         time.sleep(1)
         self.stop()
     
+# SECOND DANCE (2/4)
 
     def dance2(self):
+    """ Second dance, Same move as dance1, just the other way"""
+    # In order to make it go the other way I change its turning direction
         time.sleep(.2)
         self.fwd()
         time.sleep(1)
@@ -141,7 +145,11 @@ class Piggy(PiggyParent):
         time.sleep(1)
         self.stop()
 
+# THRID DANCE (3/4)
+
     def dance3(self):
+    """ Thrid dance, Combo 3 of 4, same move as dance1, just backwords"""
+    # This move is untested and I pray it works, created by changing the directions the robot heads in. Oppisite to dance1
         time.sleep(.2)
         self.back()
         time.sleep(1)
@@ -160,8 +168,13 @@ class Piggy(PiggyParent):
         self.back()
         time.sleep(1)
         self.stop()
+
+
+# FORTH DANCE (4/4)
 
     def dance4(self):
+    """ Forth dance, The last combo move, same as dance2, just backwards instead of forwards"""
+    # This is the last move of the four step-slide combo
         time.sleep(.2)
         self.back()
         time.sleep(1)
@@ -182,8 +195,12 @@ class Piggy(PiggyParent):
         self.stop()
 
 
+#FIFTH DANCE
 
     def move2(self):
+    "Fitfh dance, it is a simple cha-cha slide, so fwds and back"
+    # May pop a wheelie
+
         for r in range(3):
             time.sleep(.1)
             self.fwd()
@@ -197,8 +214,10 @@ class Piggy(PiggyParent):
         
         self.stop()
 
+# SIXTH DANCE
 
     def quinn_shuffle(self):
+    """ This dance was added to extend the dance, does a cool snake like slithering move"""
     # Code taken from Quinn via discord, thanks Quinn.
         for x in range(12):
             self.right(primary=-60, counter=0)
@@ -207,17 +226,23 @@ class Piggy(PiggyParent):
             time.sleep(.1)
         self.stop()
 
+# SEVENTH DANCE
 
     def roundround(self):
+    """ This dance is odd. The robots looks at all four candinal directions then does a head sway"""
+    # A last minue add in, but I think it will be cool
         for angle in range(4):
             self.turn_by_deg(90)
             self.servo(1000)
             self.servo(2000)
         self.servo(1500)
         self.stop()
-        # neewd to figure out shake
+        
+
+# EIGHT DANCE
 
     def sprinkler(self):
+    """ As classic and simple as it gets. Make the head/neck of the robot move so it mocks the famous sprinkler move"""
     # Code taken from Mr.A on the Gilmour Discord
         for angle in range(1100, 2000, 50):
             self.servo(angle)
@@ -233,9 +258,10 @@ class Piggy(PiggyParent):
         self.servo(1500)
         self.stop()
 
+# NINTH DANCE
 
     def wheelie(self):
-        """this is a wheelie move"""
+        """this is a wheelie move, it pops a quick backwards wheelie, is very rad """
         #taken from Friedman, thanks mate.
         for x in range(4):
             self.fwd(right=100, left=100)
@@ -249,6 +275,8 @@ class Piggy(PiggyParent):
             self.servo(-1000)
             self.stop()
         self.stop()
+
+
 
     def example_move(self):
         """this is an example dance move that should be replaced by student-created content"""
