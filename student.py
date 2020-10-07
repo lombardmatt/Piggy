@@ -331,6 +331,22 @@ class Piggy(PiggyParent):
         # if the three part check didn't freak out
         return True
 
+
+    def turn_until_clear(self):
+        """ Rotate right until no obstacle is seen. """
+        print("----turning until clear----")
+        # make sure we are looking straight
+        self.servo(self.MIDPOINT)
+        # so long as we see something close, keep turning left
+        while self.read_distance() < self.SAFE_DISTANCE:
+            self.left(primary=40, counter=-40)
+            time.sleep(.05)
+
+
+
+        # stop motion before we end the method
+        self.stop()
+
     def nav(self):
         """ Auto-pilot program """
         print("-----------! NAVIGATION ACTIVATED !------------\n")
@@ -341,11 +357,8 @@ class Piggy(PiggyParent):
        # TODO: fix this magic number
         while True:
             if not self.quick_check():
-
                 self.stop()
-                print("something in the way")
-                self.turn_by_deg(90)
-                time.sleep(.1)
+                self.turn_until_clear()
             else:
                 self.fwd()
 
