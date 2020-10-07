@@ -339,7 +339,7 @@ class Piggy(PiggyParent):
         self.servo(self.MIDPOINT)
         # so long as we see something close, keep turning left
         while self.read_distance() < self.SAFE_DISTANCE:
-            self.left(primary=40, counter=-40)
+            self.right(primary=40, counter=-40)
             time.sleep(.05)
 
 
