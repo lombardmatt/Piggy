@@ -355,6 +355,7 @@ class Piggy(PiggyParent):
         
         # TODO: build self.quick_check() that does a fast, 3-part check instead of read_distance
        # TODO: fix this magic number
+       self.fwd()
         while True:
             if not self.quick_check():
                 self.stop()
