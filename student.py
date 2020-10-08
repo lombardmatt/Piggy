@@ -317,6 +317,13 @@ class Piggy(PiggyParent):
 
     def obstacle_count(self):
         """Does a 360 scan and returns the number of obstacles it sees"""
+        # scan
+        self.scan()
+        # print results
+        for angle in self.scan_data:
+            dist = self.scan_data[angle]
+            print("ANGLE %d | DIST: %d" % (angle,dist))
+
         pass
 
 
