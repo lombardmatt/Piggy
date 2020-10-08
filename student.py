@@ -321,7 +321,7 @@ class Piggy(PiggyParent):
         # scan
         self.scan()
 
-        self.scan_data = OrderedDict(sorted(self.scan_data.items9()))
+        self.scan_data = OrderedDict(sorted(self.scan_data.items()))
         # print results
         for angle in self.scan_data:
             dist = self.scan_data[angle]
