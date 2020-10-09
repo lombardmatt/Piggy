@@ -327,7 +327,9 @@ class Piggy(PiggyParent):
         count = 0
         for s in range(4):
             self.obstacle_scan()
+            time.sleep(.1)
             self.turn_by_deg(90)
+            time.sleep(1)
         self.stop()
 
 
