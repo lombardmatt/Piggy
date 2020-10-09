@@ -325,18 +325,8 @@ class Piggy(PiggyParent):
         # FIGURE OUT HOW MANY obejcts THERE WERE
         see_an_object = False
         count = 0
-        for s in range(4):
-            self.obstacle_scan()
-            time.sleep(.1)
-            self.turn_by_deg(90)
-            time.sleep(1)
-        self.stop()
 
-
-
-
-    def obstacle_scan(self):
-        for angle in self.scan_data:
+        for angle in self.scan_data(4):
             dist = self.scan_data[angle]
             if dist < self.SAFE_DISTANCE and not see_an_object:
                 see_an_object = True
@@ -345,7 +335,8 @@ class Piggy(PiggyParent):
             elif dist > self.SAFE_DISTANCE and see_an_object:
                 see_an_object = False
                 print("The object is no more")
-
+            self.turn_by_deg(90)
+            time.sleep(1)
             print("ANGLE %d | DIST: %d" % (angle,dist))
         print("\nI saw %d objects" % count)
 
