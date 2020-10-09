@@ -337,6 +337,7 @@ class Piggy(PiggyParent):
                     see_an_object = False
                     print("The object is no more")
                 print("ANGLE %d | DIST: %d" % (angle,dist))
+            self.turn_by_deg(90)
             print("\nI saw %d objects" % count)
     
 
