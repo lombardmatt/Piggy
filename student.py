@@ -315,17 +315,31 @@ class Piggy(PiggyParent):
         for angle in range(self.MIDPOINT-350, self.MIDPOINT+350, 3):
             self.servo(angle)
             self.scan_data[angle] = self.read_distance()
+        # sort the scan data for easier analysis
+        self.scan_data = OrderedDict(sorted(self.scan_data.items()))
 
     def obstacle_count(self):
         """Does a 360 scan and returns the number of obstacles it sees"""
         # scan
         self.scan()
+        # FIGURE OUT HOW MANY obejcts THERE WERE
+        see_an_object = False
+        count = 0
 
-        self.scan_data = OrderedDict(sorted(self.scan_data.items()))
-        # print results
         for angle in self.scan_data:
             dist = self.scan_data[angle]
+            if dist < self.SAFE_DISTANCE and not see_an_object:
+                see_an_object = True
+                count += 1
+                print("I see something")
+            elif dist > self.SAFE_DISTANCE and see_an_object:
+                see_an_object = False
+                print("The object is no more")
+
             print("ANGLE %d | DIST: %d" % (angle,dist))
+        print("\nI saw %d objects" % count)
+
+
 
         pass
 
