@@ -321,31 +321,23 @@ class Piggy(PiggyParent):
     def obstacle_count(self):
         """Does a 360 scan and returns the number of obstacles it sees"""
         for s in range(4):
-            self.obstacle_scan()
-            self.turn_by_deg(90)
-        self.stop()
-        
-        
-        
-        
-    def obstacle_scan(self):
         # scan
-        self.scan()
+            self.scan()
         # FIGURE OUT HOW MANY obejcts THERE WERE
-        see_an_object = False
-        count = 0
+            see_an_object = False
+            count = 0
 
-        for angle in self.scan_data:
-            dist = self.scan_data[angle]
-            if dist < self.SAFE_DISTANCE and not see_an_object:
-                see_an_object = True
-                count += 1
-                print("I see something")
-            elif dist > self.SAFE_DISTANCE and see_an_object:
-                see_an_object = False
-                print("The object is no more")
-            print("ANGLE %d | DIST: %d" % (angle,dist))
-        print("\nI saw %d objects" % count)
+            for angle in self.scan_data:
+                dist = self.scan_data[angle]
+                if dist < self.SAFE_DISTANCE and not see_an_object:
+                    see_an_object = True
+                    count += 1
+                    print("I see something")
+                elif dist > self.SAFE_DISTANCE and see_an_object:
+                    see_an_object = False
+                    print("The object is no more")
+                print("ANGLE %d | DIST: %d" % (angle,dist))
+            print("\nI saw %d objects" % count)
     
 
 
