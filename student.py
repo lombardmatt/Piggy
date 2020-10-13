@@ -318,6 +318,32 @@ class Piggy(PiggyParent):
         # sort the scan data for easier analysis
         self.scan_data = OrderedDict(sorted(self.scan_data.items()))
 
+
+    def right_or_left(self):
+        """ Should I turn right or left? Returns l or r depending on the scanned data"""
+        self.scan()
+        
+        right_sum = 0
+        right_avg = 0
+        left_sum = 0
+        left_avg = 0
+
+        for angle in self.scan_data:
+            # avg up the dist on the right side
+            if angle < self.MIDPOINT:
+                right_sum += 1
+            else:
+                left_sum += self.scan_data[angle]
+                left_avg += 1
+
+        # calc avgs
+        left_avg = left_sum / left_avg
+        right_avg = right_sum / right_avg
+        if left_avg > right_avg:
+            return 'l'
+        else:
+            return 'r'
+
     def obstacle_count(self):
         """Does a 360 scan and returns the number of obstacles it sees"""
         for s in range(4):
@@ -382,7 +408,11 @@ class Piggy(PiggyParent):
         while True:
             if not self.quick_check():
                 self.stop()
-                self.turn_until_clear()
+                #self.turn_until_clear()
+                if 'l' in self.right_or_;eft():
+                    self.turn_by_deg(-45)
+                else: 
+                    self.turn_by_deg(45)
             else:
                 self.fwd()
 
