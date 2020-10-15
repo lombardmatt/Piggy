@@ -420,6 +420,10 @@ class Piggy(PiggyParent):
         
         while True:
         # Code taught and created by Mr.A
+        # I want to make a code that allows my robot to back out of any situation
+        # so I started looking through other peoples code
+        # work smarter not harder
+        # I took some inspiration from a few people, thanks other people for having the same idea as me
             if not self.quick_check(): 
                 turn_count += 1
                 self.stop()
