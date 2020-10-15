@@ -400,6 +400,12 @@ class Piggy(PiggyParent):
         # stop motion before we end the method
         self.stop()
 
+    
+
+    def get_back(self):
+        if 
+
+
     def nav(self):
         """ Auto-pilot program """
         print("-----------! NAVIGATION ACTIVATED !------------\n")
@@ -418,14 +424,19 @@ class Piggy(PiggyParent):
                 turn_count += 1
                 self.stop()
                 # self.turn_until_clear()
-                if turn_count > 3 and turn_count % 5 == 0:
-                    self.turn_to_deg(exit_ang)
+                # turn count code taken from parker struas and modified by yours truly
+                if turn_count > 3:
+                    self.turn_deg(135)
+                    self.turn_count = 0
                 elif 'l' in self.right_or_left():
                     self.turn_by_deg(-45)
                 else: 
                     self.turn_by_deg(45)
             else:
                 self.fwd()
+
+
+
 
 
         # TODO: scan so we can decide left or right
