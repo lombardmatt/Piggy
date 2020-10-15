@@ -102,7 +102,7 @@ class Piggy(PiggyParent):
 
 
 
-# FIRST DANCE (1/4)
+    #   FIRST DANCE (1/4)
 
     def dance1(self):
         """ This is the 1st part to a 4 move combo. This dance makes the robot drive in an L-shape to mock a slide"""
@@ -130,7 +130,7 @@ class Piggy(PiggyParent):
         time.sleep(1)
         self.stop()
     
-# SECOND DANCE (2/4)
+    # SECOND DANCE (2/4)
 
     def dance2(self):
         """ Second dance, Same move as dance1, just the other way"""
@@ -158,7 +158,7 @@ class Piggy(PiggyParent):
         time.sleep(1)
         self.stop()
 
-# THRID DANCE (3/4)
+    # THRID DANCE (3/4)
 
     def dance3(self):
         """ Thrid dance Combo 3 of 4 same move as dance1, just backwords"""
@@ -188,7 +188,7 @@ class Piggy(PiggyParent):
         self.stop()
 
 
-# FORTH DANCE (4/4)
+    # FORTH DANCE (4/4)
 
     def dance4(self):
         """ Forth dance, The last combo move, same as dance2, just backwards instead of forwards"""
@@ -217,7 +217,7 @@ class Piggy(PiggyParent):
         self.stop()
 
 
-#FIFTH DANCE
+    #FIFTH DANCE
 
     def move2(self):
         """Fitfh dance, it is a simple cha-cha slide, so fwds and back"""
@@ -236,7 +236,7 @@ class Piggy(PiggyParent):
         
         self.stop()
 
-# SIXTH DANCE
+    # SIXTH DANCE
 
     def quinn_shuffle(self):
         """ This dance was added to extend the dance, does a cool snake like slithering move"""
@@ -248,7 +248,7 @@ class Piggy(PiggyParent):
             time.sleep(.1)
         self.stop() 
 
-# SEVENTH DANCE
+        # SEVENTH DANCE
 
     def roundround(self):
         """ This dance is odd, just a spin with some head movements. He is trying his hardest ok"""
@@ -261,7 +261,7 @@ class Piggy(PiggyParent):
         self.stop()
         
 
-# EIGHT DANCE
+    # EIGHT DANCE
 
     def sprinkler(self):
         """ As classic and simple as it gets. Make the head/neck of the robot move so it mocks the famous sprinkler move"""
@@ -280,7 +280,7 @@ class Piggy(PiggyParent):
         self.servo(1500)
         self.stop()
 
-# NINTH DANCE
+    # NINTH DANCE
 
     def wheelie(self):
         """this is a wheelie move, it pops a quick backwards wheelie, is very rad """
@@ -411,7 +411,8 @@ class Piggy(PiggyParent):
         turn_count = 0
 
         
- while True:
+        while True:
+        # Code taught and created by Mr.A
             if not self.quick_check(): 
                 turn_count += 1
                 self.stop()
@@ -425,7 +426,7 @@ class Piggy(PiggyParent):
             else:
                 self.fwd()
 
-                
+
         # TODO: scan so we can decide left or right
         # TODO: average the right side of the scan dict
         # TODO: average the left side of the scan dict
