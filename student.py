@@ -405,7 +405,7 @@ class Piggy(PiggyParent):
         print("-------- [ Press CTRL + C to stop me ] --------\n")
         print("-----------! NAVIGATION ACTIVATED !------------\n")
         
-        exit_ang = self.get_haeding()
+        exit_ang = self.get_heading()
         # because I've written down the exit angle, at any time I can use
         # self.turn_to_deg(exit_ang)
         turn_count = 0
