@@ -331,7 +331,7 @@ class Piggy(PiggyParent):
         for angle in self.scan_data:
             # avg up the dist on the right side
             if angle < self.MIDPOINT:
-                right_sum += self.scan_data(angle)
+                right_sum += self.scan_data[angle]
                 right_avg += 1
             else:
                 left_sum += self.scan_data[angle]
