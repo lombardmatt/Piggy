@@ -416,7 +416,7 @@ class Piggy(PiggyParent):
 
         
         while True:
-        # Code taught and created by Mr.A
+        # Basic/starting Code taught and created by Mr.A
         # I want to make a code that allows my robot to back out of any situation
         # so I started looking through other peoples code
         # work smarter not harder
@@ -425,9 +425,9 @@ class Piggy(PiggyParent):
                 turn_count += 1
                 self.stop()
                 # self.turn_until_clear()
-                # turn count code taken from parker struas and modified by yours truly
+                # turn count code taken from Parker Strauss and slightly modified by yours truly
                 if turn_count > 3:
-                    self.turn_deg(135)
+                    self.turn_by_deg(135)
                     self.turn_count = 0
                 elif 'l' in self.right_or_left():
                     self.turn_by_deg(-45)
