@@ -402,9 +402,6 @@ class Piggy(PiggyParent):
 
     
 
-    def get_back(self):
-        if 
-
 
     def nav(self):
         """ Auto-pilot program """
