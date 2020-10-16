@@ -436,7 +436,7 @@ class Piggy(PiggyParent):
                 # else: 
                     # self.turn_by_deg(45)
             else:
-                self.fwd()``
+                self.fwd()
 
 
 
