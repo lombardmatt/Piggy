@@ -400,7 +400,7 @@ class Piggy(PiggyParent):
         # stop motion before we end the method
         self.stop()
 
-    def escape(self):
+    def get_out(self):
         if turn_count > 3:
             self.turn_by_deg(90)
             self.stop()
@@ -434,7 +434,7 @@ class Piggy(PiggyParent):
                 self.turn_until_clear()
                 # turn count code taken from Parker Strauss and slightly modified by yours truly
                 """ if the robot is stuck, it will turn 3 times and scan, and if there is no safe place to leave it will go out the way it came """
-                self.escape()
+                self.get_out()
                 # elif 'l' in self.right_or_left():
                     # self.turn_by_deg(-45)
                 # else: 
