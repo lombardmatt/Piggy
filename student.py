@@ -344,6 +344,14 @@ class Piggy(PiggyParent):
             return 'l'
         else:
             return 'r'
+        
+        if 'l' in self.right_or_left():
+                    self.turn_by_deg(-45)
+
+        elif: 'r' in self.right_or_left():
+                    self.turn_by_deg(45)
+
+
 
     def obstacle_count(self):
         """Does a 360 scan and returns the number of obstacles it sees"""
@@ -437,8 +445,6 @@ class Piggy(PiggyParent):
                     self.turn_count = 0 # resets turn count to 0
                 # elif 'l' in self.right_or_left():
                     # self.turn_by_deg(-45)
-                # else: 
-                    # self.turn_by_deg(45)
             else:
                 self.fwd()
 
