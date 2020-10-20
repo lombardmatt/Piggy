@@ -447,7 +447,7 @@ class Piggy(PiggyParent):
                 # elif 'l' in self.right_or_left():
                     # self.turn_by_deg(-45)
             else:
-                self.turn_count()
+                self.turn_count
                 self.fwd()
 
 
