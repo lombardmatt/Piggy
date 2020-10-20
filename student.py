@@ -433,7 +433,7 @@ class Piggy(PiggyParent):
                 if 'l' in self.right_or_left():
                     self.turn_by_deg(-45)
 
-                else 'r' in self.right_or_left():
+                else:
                     self.turn_by_deg(45)
 
                 # turn count code taken from Parker Strauss and slightly modified by yours truly
