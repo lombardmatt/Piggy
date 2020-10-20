@@ -428,7 +428,7 @@ class Piggy(PiggyParent):
                 # turn count code taken from Parker Strauss and slightly modified by yours truly
                 """ if the robot is stuck, it will turn 3 times and scan, and if there is no safe place to leave it will go out the way it came """
                 if turn_count > 2:
-                    self.right_or_left
+                    self.right_or_left()
                     self.stop()
                     time.sleep(1)
                     self.quick_check()
