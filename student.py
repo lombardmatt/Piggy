@@ -441,7 +441,6 @@ class Piggy(PiggyParent):
                 if turn_count > 2:
                     self.back()
                     time.sleep(.5)
-                    self.turn_by_deg(-90)
                     self.stop()
                     time.sleep(1)
                     self.quick_check()
