@@ -19,7 +19,8 @@ class Piggy(PiggyParent):
         MAGIC NUMBERS <-- where we hard-code our settings
         '''
         self.LEFT_DEFAULT = 80
-        self.RIGHT_DEFAULT = 78.5
+        self.RIGHT_DEFAULT = 80
+        # 78.5
         self.SAFE_DISTANCE = 300
         self.CLOSE_DISTANCE = 150
         self.MIDPOINT = 1500  # what servo command (1000-2000) is straight forward for your bot?
