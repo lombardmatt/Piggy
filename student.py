@@ -421,6 +421,7 @@ class Piggy(PiggyParent):
 
         
         while True:
+        """ this states what the robot should do when it quick checks """
         # Basic/starting Code taught and created by Mr.A
         # I want to make a code that allows my robot to back out of any situation
         # so I started looking through other peoples code
