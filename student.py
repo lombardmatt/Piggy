@@ -428,6 +428,9 @@ class Piggy(PiggyParent):
             # work smarter not harder
             # I took some inspiration from a few people, thanks other people for having the same idea as me
             if not self.quick_check(): 
+                self.back()
+                self.stop()
+                time.sleep(.5)
                 turn_count += 1
                 self.stop()
 
