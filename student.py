@@ -441,7 +441,7 @@ class Piggy(PiggyParent):
                 """ if the robot is stuck, it will turn 3 times and scan, and if there is no safe place to leave it will go out the way it came """
                 if turn_count > 2:
                     self.back()
-                    time.sleep(.5)
+                    time.sleep(.75)
                     self.stop()
                     time.sleep(1)
                     self.turn_to_deg(exit_ang)
